@@ -54,7 +54,7 @@ class Paper(Base):
     chunks: Mapped[list["Chunk"]] = relationship(
         back_populates="paper", cascade="all, delete-orphan", passive_deletes=True
     )
-    file_hash: Mapped[str] = mapped_column(String(64), nullable=False)
+    file_hash: Mapped[str] = mapped_column(String(64), nullable=True)
 
 
 class Chunk(Base):
