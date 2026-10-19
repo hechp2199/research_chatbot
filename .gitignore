@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 .env
-data/pdfs/
+data/pdfs/*
 data/*
 !data/pdfs/
 !data/.gitkeep
